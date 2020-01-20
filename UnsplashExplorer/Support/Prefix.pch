@@ -1,0 +1,48 @@
+//
+//  Prefix.h
+//  UnsplashExplorer
+//
+//  Created by 习波 肖 on 2020/1/18.
+//  Copyright © 2020 习波 肖. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <Photos/Photos.h>
+
+#import <JSONModel-umbrella.h>
+#import <MJRefresh-umbrella.h>
+#import <AFNetworking-umbrella.h>
+#import <SDWebImage-umbrella.h>
+#import <MBProgressHUD-umbrella.h>
+#import <Toast-umbrella.h>
+#import <Masonry-umbrella.h>
+#import <DZNEmptyDataSet-umbrella.h>
+
+
+
+#import "UIView+ToastExtension.h"
+#import "UEAlertController.h"
+#import "UIView+ParentController.h"
+#import "UEUtil.h"
+#import "UIImageView+ProgressView.h"
+
+
+#define SCREEN_FRAM      [[UIScreen mainScreen] bounds]
+#define SCREEN_WIDTH     [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT    [[UIScreen mainScreen] bounds].size.height
+
+
+#endif
+
+
+
+#endif /* Prefix_pch */
